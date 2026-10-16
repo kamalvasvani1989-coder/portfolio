@@ -10,9 +10,9 @@ export const profile = {
     "As the security function of a SaaS company, I own everything from firewall policy and endpoint management to cloud hardening and audit readiness. I like turning security work into systems that keep running without me: automation, clear runbooks, and controls that hold up under audit.",
     "Outside work, I build tools that make security understandable for people who aren't security experts, and I keep sharpening my DevOps skills through hands-on cloud projects.",
   ],
-  email: "hello@kamalvasvani.com",           // TODO: your real email
-  linkedin: "https://www.linkedin.com/in/your-handle", // TODO
-  github: "https://github.com/your-handle",           // TODO
+  email: "vasvanikamal@outlook.com",           // TODO: your real email
+  linkedin: "https://www.linkedin.com/in/kamal-vasvani-50b366a9", // TODO
+  github: "https://github.com/kamalvasvani1989-coder",           // TODO
 };
 
 export const now = {
