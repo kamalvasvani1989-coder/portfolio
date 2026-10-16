@@ -1,87 +1,136 @@
-// Edit everything about the site here. Replace the placeholder links before publishing.
+// All site content lives here. Edit, save, then git add / commit / push.
 
 export const profile = {
   name: "Kamal Vasvani",
-  role: "IT Security Engineer & Information Security Officer",
+  title: "Cloud & Security Architect",
+  tagline: "Hybrid cloud · BCDR · Security remediation · Compliance",
   location: "Surat, India",
-  intro:
-    "I secure cloud-first companies end to end: the AWS and Kubernetes they run on, the identities and devices their people use, the network in the office, and the compliance program that proves it all to auditors.",
-  about: [
-    "As the security function of a SaaS company, I own everything from firewall policy and endpoint management to cloud hardening and audit readiness. I like turning security work into systems that keep running without me: automation, clear runbooks, and controls that hold up under audit.",
-    "Outside work, I build tools that make security understandable for people who aren't security experts, and I keep sharpening my DevOps skills through hands-on cloud projects.",
-  ],
-  email: "vasvanikamal@outlook.com",           // TODO: your real email
-  linkedin: "https://www.linkedin.com/in/kamal-vasvani-50b366a9", // TODO
-  github: "https://github.com/kamalvasvani1989-coder",           // TODO
+  summary:
+    "I design and secure enterprise infrastructure across Microsoft Azure, AWS and on-premises environments. Over 16 years I've built highly available hybrid platforms, disaster recovery that works when it's needed, and vulnerability programs that close critical risk fast, while keeping environments audit-ready for SOC 2, ISO 27001 and FedRAMP-aligned controls.",
+  email: "vasvanikamal@outlook.com",
+  linkedin: "https://www.linkedin.com/in/kamal-vasvani-50b366a9",
+  github: "https://github.com/kamalvasvani1989-coder",
+  // To offer a résumé download: put the PDF in the "public" folder and set the
+  // file name here, e.g. "/Kamal-Vasvani-Resume.pdf". Leave null to hide the button.
+  resume: null,
 };
 
-export const now = {
-  title: "SiteKavach",
-  text: "A free website security checkup that explains email, SSL, browser and DNS issues in plain language, with copy-paste fixes.",
-  link: "https://scan.kamalvasvani.com",
-  linkLabel: "Try SiteKavach",
-};
+export const metrics = [
+  { value: "16+", label: "Years in infrastructure and security" },
+  { value: "2,500+", label: "Users protected with Zero Trust and RBAC" },
+  { value: "350+", label: "Cloud assets under vulnerability management" },
+  { value: "90%", label: "Critical risks remediated within 30 days" },
+];
 
-export const skills = [
+export const experience = [
   {
-    area: "Cloud & DevOps",
-    items: ["AWS (EKS, EC2, S3, Lambda, CloudWatch, SNS)", "Kubernetes & Helm", "Terraform & Ansible", "Jenkins CI/CD", "Docker & ECR"],
+    role: "IT Security Engineer & Information Security Officer",
+    company: "Gainserv Infotech",
+    period: "2026 – Present",
+    points: [
+      "Lead the security function for a SaaS platform, covering cloud, identity, endpoints and network.",
+      "Driving a combined SOC 2 and ISO 27001 certification program, including ISMS policies and risk management.",
+      "Hardened AWS workloads (EKS, EC2, S3) by remediating cloud posture findings, and enforced Conditional Access in Microsoft Entra ID.",
+      "Rolled out Intune device management across Android, iOS, macOS and Linux, and built resilient office networking with firewall policy, VPNs and dual-ISP failover.",
+    ],
+  },
+  {
+    role: "Cloud Architect",
+    company: "Casepoint",
+    period: "Jun 2019 – Mar 2026",
+    points: [
+      "Architected secure Azure IaaS and hybrid environments across Availability Zones, removing single points of failure and meeting strict operational SLAs.",
+      "Designed disaster recovery and BCDR frameworks with Azure Site Recovery and Veeam, including automated backup and recovery.",
+      "Ran the vulnerability lifecycle for 350+ Azure assets with Tenable Nessus and PowerShell automation, eliminating 90% of critical risks within 30 days.",
+      "Established Zero Trust controls and strict RBAC for 2,500+ users, cutting unauthorized access incidents by 85%.",
+      "Built observability with Grafana, Datadog, Graylog and Azure Monitor; led major incident response and authored runbooks and RCAs.",
+      "Presented cloud security roadmaps and BCDR strategy to executive stakeholders, balancing risk against budget.",
+    ],
+  },
+  {
+    role: "Server Administrator",
+    company: "SSM InfoTech",
+    period: "Aug 2016 – Jun 2019",
+    points: [
+      "Administered VMware ESXi and Hyper-V environments for 2,000+ users at 99.9% uptime, reducing infrastructure costs by 20%.",
+      "Directed WSUS patch management across 500+ servers, reducing vulnerabilities by 90% in six months with 98% policy compliance.",
+      "Managed database disaster recovery with Symantec NetBackup and custom scripting.",
+    ],
+  },
+  {
+    role: "Network Administrator",
+    company: "Creative Infotech",
+    period: "Aug 2015 – Aug 2016",
+    points: [
+      "Engineered a Hyper-V cluster with 99.99% uptime and DR planning that reduced incidents by 70%.",
+      "Coordinated 12+ vendors, reducing ticket resolution time by 30%.",
+    ],
+  },
+  {
+    role: "System Administrator",
+    company: "Innovative Telecom & Softwares",
+    period: "Jul 2010 – Aug 2015",
+    points: [
+      "Supported 500+ Lenovo/IBM enterprise systems, reducing incidents by 50% over 12 months.",
+      "Delivered network infrastructure for 25+ clients on one-month deployment cycles.",
+    ],
+  },
+];
+
+export const expertise = [
+  {
+    area: "Cloud & virtualization",
+    items: ["Microsoft Azure (IaaS, Site Recovery, Monitor)", "AWS (EKS, EC2, S3, Lambda)", "VMware ESXi & Hyper-V", "Cisco UCS"],
   },
   {
     area: "Security & compliance",
-    items: ["ISO 27001 & SOC 2 programs", "ISMS policies and risk management", "Cloud posture with Prowler & ScoutSuite", "Vulnerability assessment coordination", "Compliance automation"],
+    items: ["SOC 2, ISO 27001, FedRAMP-aligned controls", "CIS Benchmark hardening", "Tenable Nessus, Palo Alto Cortex XDR", "Zero Trust & RBAC"],
+  },
+  {
+    area: "Resilience & BCDR",
+    items: ["Disaster recovery architecture", "Veeam & Symantec NetBackup", "Pure Storage", "High availability design"],
+  },
+  {
+    area: "Observability",
+    items: ["Datadog", "Grafana & Prometheus", "Graylog", "Azure Monitor"],
   },
   {
     area: "Identity & endpoints",
-    items: ["Microsoft 365 & Entra ID", "Conditional Access", "Intune MDM for desktop and mobile", "Remote management & patching", "Password management"],
+    items: ["Active Directory & Entra ID", "Conditional Access", "Intune & SCCM", "Microsoft Defender, ESET"],
   },
   {
-    area: "Network & infrastructure",
-    items: ["FortiGate firewalls", "Site-to-site and IKEv2 VPNs", "Dual-ISP failover", "VLAN segmentation & Wi-Fi", "Logging & observability"],
+    area: "Automation & DevOps",
+    items: ["PowerShell & Python", "Terraform & Ansible", "Kubernetes & Helm", "Jenkins CI/CD"],
   },
 ];
 
 export const projects = [
   {
     title: "SiteKavach",
-    kind: "Product",
-    text: "Website security checkup with an A–F grade, plain-language findings and copy-paste fixes. FastAPI backend with SSRF protection and rate limiting, React frontend, self-hosted behind Cloudflare Tunnel.",
-    tags: ["Python", "FastAPI", "React", "Cloudflare"],
-    link: "https://scan.kamalvasvani.com",
+    text: "A website security assessment tool that grades email authentication, TLS, security headers and DNS, and explains each fix in plain language. FastAPI and React, with SSRF protection and rate limiting.",
+    tags: ["Python", "FastAPI", "React"],
+    link: null, // set to "https://scan.kamalvasvani.com" once it's live
   },
   {
     title: "Container image vulnerability scanner",
-    kind: "Tool",
-    text: "Scans container images for known vulnerabilities and turns the results into readable reports.",
-    tags: ["Docker", "Security", "Reporting"],
+    text: "Scans container images for known vulnerabilities and produces readable remediation reports.",
+    tags: ["Docker", "Vulnerability management"],
     link: null,
   },
   {
-    title: "StreamingApp on EKS",
-    kind: "DevOps",
-    text: "MERN streaming app containerised to ECR, built with Jenkins, deployed to EKS with Helm, monitored in CloudWatch, with SNS alerts to chat.",
-    tags: ["EKS", "Helm", "Jenkins", "CloudWatch"],
+    title: "Kubernetes delivery pipeline on AWS EKS",
+    text: "Containerised application built with Jenkins, deployed to EKS with Helm, monitored in CloudWatch with SNS alerting.",
+    tags: ["EKS", "Helm", "Jenkins"],
     link: null,
   },
   {
-    title: "TravelMemory with Terraform & Ansible",
-    kind: "DevOps",
-    text: "Infrastructure as code for a MERN app on AWS: Terraform provisions the network and servers, Ansible configures and deploys them.",
-    tags: ["Terraform", "Ansible", "AWS"],
-    link: null,
-  },
-  {
-    title: "AWS automation with Lambda & Boto3",
-    kind: "Automation",
-    text: "Serverless functions that automate routine AWS operations and housekeeping.",
-    tags: ["Lambda", "Python", "Boto3"],
+    title: "Infrastructure as code on AWS",
+    text: "Terraform provisions network and compute; Ansible configures and deploys the application stack.",
+    tags: ["Terraform", "Ansible"],
     link: null,
   },
 ];
 
-export const highlights = [
-  "Driving a combined SOC 2 and ISO 27001 certification effort",
-  "Rolled out Intune device management across Android, iOS, macOS and Linux",
-  "Remediated cloud and Microsoft 365 posture findings and enforced Conditional Access",
-  "Set up dual-ISP failover and VPN connectivity for a new office",
+export const education = [
+  { degree: "Bachelor of Computer Applications", school: "Indira Gandhi National Open University", period: "2012 – 2016" },
 ];
