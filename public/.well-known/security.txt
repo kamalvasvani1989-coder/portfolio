@@ -1,0 +1,4 @@
+Contact: mailto:vasvanikamal@outlook.com
+Expires: 2027-10-20T00:00:00Z
+Preferred-Languages: en
+Canonical: https://kamalvasvani.com/.well-known/security.txt
